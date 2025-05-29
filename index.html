@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkillBridge</title>
 </head>
+
 <body>
-      <header>
+    <header>
         <div class="container">
             <h1>SkillBridge</h1>
             <p>"Conectamos tu talento con el futuro."</p>
@@ -17,12 +19,12 @@
     <main>
         <section>
             <h2>Descubre SkillBridge</h2>
-            <p>SkillBridge es una plataforma de educación en tecnología que ofrece cursos intensivos en programación, diseño UX y análisis de datos, con mentores expertos y proyectos reales para impulsar tu carrera.</p>
+            <p>SkillBridge es una plataforma de educación en tecnología que ofrece cursos intensivos en programación,
+                diseño UX y análisis de datos, con mentores expertos y proyectos reales para impulsar tu carrera.</p>
             <p>"No solo aprendes, trabajas en casos de empresas reales desde el día 1."</p>
         </section>
-    </main>
 
-      <section>
+        <section>
             <h2>Nuestros Programas</h2>
             <div>
                 <div>
@@ -52,5 +54,33 @@
             </div>
         </section>
 
+        <section>
+            <h2>¡Comienza tu viaje!</h2>
+            <form>
+                <div>
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="interes">Programa de Interés:</label>
+                    <select id="interes" name="interes">
+                        <option value="web">Desarrollo Web</option>
+                        <option value="ux">Diseño UX/UI</option>
+                        <option value="datos">Análisis de Datos</option>
+                        <option value="mentoria">Mentorías</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Enviar Solicitud</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
