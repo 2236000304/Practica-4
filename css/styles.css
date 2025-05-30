@@ -109,3 +109,99 @@ header p {
 .image-container img:hover {
     transform: scale(1.02);
 }
+
+/* Sección Programas */
+.programs-section {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.programs-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--dark-color);
+}
+
+.programas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.programa-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--accent-color);
+}
+
+.programa-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.programa-card h3 {
+    color: var(--dark-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.precio {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.precio span {
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: normal;
+}
+
+.programa-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.programa-card ul li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.programa-card ul li:before {
+    content: "✓";
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.program-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.program-button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
